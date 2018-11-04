@@ -1,7 +1,7 @@
 # MoviesApp
 
-MoviesApp is hosted at https://young-headland-62697.herokuapp.com
-`backend/` folder contains entire Node.js Express backend. MmngoDB is used to store data.
+MoviesApp is hosted at https://young-headland-62697.herokuapp.com <br />
+`backend/` folder contains entire Node.js & Express backend. MongoDB is used to store data.
 
 To run the app:
 - clone repositorium
@@ -36,9 +36,9 @@ Run `npm test` to execute the tests of endpoints.
 Run `ng build` to build the simple Angular 7 frontend. The build artifacts will be stored in the `dist/` directory. 
 
 MOVIES:
-After submitting the title of the movie the whole movie object with details fetched from http://www.omdbapi.com/
-is saved in database and added to displayd movie list.
+After submitting title of the movie the whole movie object with details fetched from http://www.omdbapi.com/
+is saved in database and added to displayed movie list.
 
 COMMENTS
-After submitting movie id and comment text the comment is added to displayed comments list.
+After submitting movie id and comment text the comment is added to displayed comment list.
 If user clicks on movie id in the comment, all comments bound to movie are displayed.
