@@ -1,0 +1,65 @@
+<div class="container">
+ 
+
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Comments</h1>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-sm-12">
+        <form>
+          <div class="row">
+            <div class="col-9">
+              <div class="form-group">
+              <input type="text" class="form-control" placeholder="Add movie ID"
+                name="movieID"
+                [(ngModel)]="movieID">
+              </div>
+                <div class="form-group">
+                <textarea class="form-control" placeholder="Add comment text"
+                name="commentText"
+                [(ngModel)]="commentText"></textarea>
+                </div>
+            </div>
+            <div class="col-3">
+              <button class="btn-block btn-info form-control" (click)="addComment(movieID, commentText)">Add</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <hr>
+  <div class="row">
+      <div class="col-sm-12">
+      <div class="accordion" id="accordionExample" *ngFor="let comment of comments">
+          <div class="card" >
+            <div class="card-header">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" attr.data-target="#{{comment._id}}" aria-expanded="true" aria-controls="comment.idMovie">
+                  {{ comment._id }}
+                </button>
+              </h5>
+            </div>
+        
+            <div attr.id="{{comment._id}}" class="collapse show"  data-parent="#accordionExample">
+              <div class="card-body">
+
+               <p> {{ comment | json }}</p>
+               <button class="btn btn-primary" (click)="viewComment(comment.idMovie)">All comments for movie id: {{ comment.idMovie }}</button>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+    <!-- <div  class="col-sm-4 d-flex align-items-stretch" *ngFor="let comment of comments">
+          <div class="card-body">
+            <button class="btn btn-primary" (click)="viewComment(comment.idMovie)">{{ comment.idMovie }}</button>
+          </div>
+        </div> -->
+    </div>
+  
+
+  </div>
+  

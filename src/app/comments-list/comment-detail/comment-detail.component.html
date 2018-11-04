@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12" *ngIf="comments">
+            <h1>All comments for movie id {{comments[0].idMovie}}:</h1>
+            <div *ngFor="let comment of comments">
+                <div class="card">
+                    {{ comment | json }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
