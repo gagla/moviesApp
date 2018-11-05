@@ -9,6 +9,7 @@ import { CommentModel } from './models/comment';
 
 const app = express();
 const port = process.env.PORT;
+let router = express.Router();
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -23,7 +24,7 @@ app.use(json());
 const distDir = __dirname + "./../dist/";
 app.use(express.static(distDir));
 
-app.post('/movies', (req, res) => {
+router.post('/movies', (req, res) => {
 
     if (!req.body.title) {
         return res.status(400).send({error: "The title of the movie has not been entered"})
@@ -49,11 +50,11 @@ app.post('/movies', (req, res) => {
 });
 
 
-app.get('/movies', (req, res) => {
+router.get('/movies', (req, res) => {
     MovieModel.find({}).then(movies => res.send(movies))
 });
 
-app.post('/comments', (req, res) => {
+router.post('/comments', (req, res) => {
     const idMovie = req.body.id,
         text = req.body.text;
 
@@ -81,7 +82,7 @@ app.post('/comments', (req, res) => {
         .catch(error => res.status(400).send({error: error.message}))
 });
 
-app.get('/comments/:id?', (req, res, next) => {
+router.get('/comments/:id?', (req, res, next) => {
     const idMovie = req.params.id;
 
     if (!idMovie) { 
@@ -106,14 +107,16 @@ app.get('/comments/:id?', (req, res, next) => {
         .catch(error => res.status(400).send({error: error.message}))
 });
 
-app.get('/comments', (req, res) => {
+router.get('/comments', (req, res) => {
     CommentModel.find({})
         .then(document => res.send(document))
         .catch(error => res.status(400).send({error: error.message}))
 });
 
+app.use('/', router);
+
 app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
+    console.log(`Server has started on port ${port}`);
 });
 
 module.exports = app;
