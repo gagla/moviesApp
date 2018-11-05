@@ -33,7 +33,9 @@ router.post('/movies', (req, res) => {
 
 
 router.get('/movies', (req, res) => {
-    MovieModel.find({}).then(movies => res.send(movies))
+    MovieModel.find({})
+    .then(movies => res.send(movies))
+    .catch(error => { res.status(500).send({error: error.message}) });
 });
 
 
