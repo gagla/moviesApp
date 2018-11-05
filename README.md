@@ -7,8 +7,8 @@ MoviesApp is hosted at https://young-headland-62697.herokuapp.com <br />
 To run the app:
 - clone repositorium
 - run `npm install`
-- install and run mongoDB if you run mongoDB locally
-- run `npm start` to start the server (if you run mongoDB on mlab ensure proxy is not blocking your connection)
+- install and run mongoDB if you run mongoDB locally; if you run mongoDB on mlab ensure proxy is not blocking your connection (https://docs.mongodb.com/manual/installation/)
+- run `npm start` to start the server
 - in another console run `ng serve` to run frontend
 
 # API Endpoints specification - REST client reqests sample
