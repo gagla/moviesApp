@@ -1,5 +1,4 @@
 import express from 'express';
-import fetch from 'node-fetch';
 import {mongoose} from './../db';
 import { ObjectID } from 'mongodb';
 import { MovieModel } from './../models/movie';

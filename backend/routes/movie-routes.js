@@ -1,10 +1,8 @@
 import express from 'express';
-import './../config.js';
 import fetch from 'node-fetch';
 import {mongoose} from './../db';
-import { ObjectID } from 'mongodb';
 import { MovieModel } from './../models/movie';
-import { CommentModel } from './../models/comment';
+
 
 let router = express.Router()
 
