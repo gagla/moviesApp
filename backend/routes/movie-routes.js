@@ -1,4 +1,5 @@
 import express from 'express';
+import './../config.js';
 import fetch from 'node-fetch';
 import {mongoose} from './../db';
 import { ObjectID } from 'mongodb';
