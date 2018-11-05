@@ -19,7 +19,7 @@ POST /movies<br />
 POST /comments<br />
 ![alt text](https://github.com/gagla/moviesApp/blob/master/readme_img/comment_post.png)
 
-GET /movie<br />
+GET /movies<br />
 ![alt text](https://github.com/gagla/moviesApp/blob/master/readme_img/movies_get.png)
 
 GET /comments<br />
