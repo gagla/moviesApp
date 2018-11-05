@@ -11,7 +11,7 @@ To run the app:
 - run `npm start` to start the server
 - in another console run `ng serve` to run frontend
 
-# API Endpoints specification - Postman reqests
+# API Endpoints specification - REST client reqests sample
 
 POST /movies<br />
 ![alt text](https://github.com/gagla/moviesApp/blob/master/readme_img/movie_post.png)
