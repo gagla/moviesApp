@@ -36,7 +36,7 @@ Run `npm test` to execute the tests of endpoints.
 Run `ng build` to build the simple Angular 7 frontend. The build artifacts will be stored in the `dist/` directory. 
 
 MOVIES:
-After submitting title of the movie the whole movie object with details fetched from http://www.omdbapi.com/
+After submitting movie title the whole movie object with details fetched from http://www.omdbapi.com/
 is saved in database and added to displayed movie list.
 
 COMMENTS

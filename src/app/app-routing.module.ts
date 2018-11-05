@@ -8,7 +8,8 @@ const routes: Routes = [
   { path: '', redirectTo: '/movies', pathMatch: 'full' },
   { path: 'movies', component: MovieListComponent },
   { path: 'comments', component: CommentListComponent },
-  { path: 'comments/:id', component: CommentDetailComponent }
+  { path: 'comments/:id', component: CommentDetailComponent },
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
