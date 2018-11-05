@@ -8,7 +8,7 @@ To run the app:
 - clone repositorium
 - run `npm install`
 - install and run mongoDB if you run mongoDB locally
-- run `npm start` to start the server
+- run `npm start` to start the server (if you are under corporate proxy, run `npm config delete proxy`, `npm config delete https-proxy` first)
 - in another console run `ng serve` to run frontend
 
 # API Endpoints specification - REST client reqests sample
