@@ -1,7 +1,8 @@
 # MoviesApp
 
 MoviesApp is hosted at https://young-headland-62697.herokuapp.com <br />
-`backend/` folder contains entire Node.js & Express backend. MongoDB is used to store data.
+`backend/` folder contains entire Node.js & Express backend. MongoDB is used to store data. <br />
+ MoviesApp uses OMDb API http://www.omdbapi.com/ 
 
 To run the app:
 - clone repositorium
