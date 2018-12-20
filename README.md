@@ -35,6 +35,7 @@ Run `npm test` to execute the tests of endpoints.
 ## Build frontend
 
 Run `ng build` to build the simple Angular 7 frontend. The build artifacts will be stored in the `dist/` directory. 
+There are JSON object displayed to show data flow.
 
 MOVIES:
 After submitting movie title the whole movie object with details fetched from http://www.omdbapi.com/
