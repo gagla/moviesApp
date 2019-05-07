@@ -41,6 +41,6 @@ MOVIES:
 After submitting movie title the whole movie object with details fetched from http://www.omdbapi.com/
 is saved in database and added to displayed movie list.
 
-COMMENTS
+COMMENTS:
 After submitting movie id and comment text the comment is added to displayed comment list.
 If user clicks on movie id in the comment, all comments bound to movie are displayed.
